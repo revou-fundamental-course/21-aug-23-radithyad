@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js"></script>
+    <title>Portofolio Website</title>
+</head>
+<style>
+    header{
+        background-image: url(./images/sunset.jpg);
+        height: auto;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+<body>
+    <header>
+        <div class="main-container">
+            <div class="nav">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#facilitation">Our Profile</a></li>
+                        <li><a href="#facilitation">Achievement</a></li>
+                        <li><a href="#contact">Message Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="navbar">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+            </div>
+
+            <section id="home">
+                <div class="home-left">
+                    <h3 class="pre-title"><b>Hi <span id="name">Alvian</span></b></h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla voluptate qui deleniti suscipit assumenda velit cum distinctio. Provident similique, modi quae corporis recusandae corrupti illo, architecto, velit vitae voluptate autem?
+                    </p>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <section id="facilitation">
+        <div class="facilitation main-container">
+            <h1 class="section-title fac-title">Our Facilitation</h1>
+
+            <div class="grid-3">
+                <!-- Facilitation 1 -->
+                <div class="fac">
+                    <div class="fac-img">
+                        <img src="./images/teacher.jpeg" alt="Teacher">
+                    </div>
+                    <h4>Professional Teacher</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consectetur sit unde quis cupiditate molestias assumenda in numquam neque facilis debitis consequatur, distinctio culpa id rerum labore illum commodi ad!</p>
+                </div>
+
+                <!-- Facilitation 2 -->
+                <div class="fac">
+                    <div class="fac-img">
+                        <img src="./images/field.jpeg" alt="Field">
+                    </div>
+                    <h4>Sport Field</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consectetur sit unde quis cupiditate molestias assumenda in numquam neque facilis debitis consequatur, distinctio culpa id rerum labore illum commodi ad!</p>
+                </div>
+
+                <!-- Facilitation 3 -->
+                <div class="fac">
+                    <div class="fac-img">
+                        <img src="./images/classroom.jpg" alt="Classroom">
+                    </div>
+                    <h4>Classroom</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consectetur sit unde quis cupiditate molestias assumenda in numquam neque facilis debitis consequatur, distinctio culpa id rerum labore illum commodi ad!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact main-container">
+            <div class="contact-left">
+                <form class="contact-form" name="message-form" onsubmit="return validateForm()">
+                    <div>
+                        <input type="text" id="full-name" placeholder="Name">
+                    </div>
+                    <div>
+                        <input type="date" id="birth-date">
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </div>
+                    <div>
+                        <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn-submit" type="button" onclick="submitButton()">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-right">
+                <div class="contact-item">
+                    <p id="sender-full-name"></p>
+                    <p id="sender-birth-date"></p>
+                    <p id="sender-gender"></p>
+                    <p id="sender-message"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
